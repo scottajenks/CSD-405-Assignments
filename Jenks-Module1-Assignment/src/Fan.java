@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
 * Scott Jenks
 * 1/7/2023
@@ -66,15 +68,30 @@ public class Fan {
         if (fanOn == false) {
             return "The " + fanColor + " fan is turned off. It has a radius of " + fanRadius + ".";
         } else {
-            return "The " + fanColor + " fan has a speed of " + fanSpeed + ", is turned on (" + fanOn
-                    + "), and has a radius of " + fanRadius + ".";
+            return "The " + fanColor + " fan has a speed of " + fanSpeed + ", is turned on, and has a radius of "
+                    + fanRadius + ".";
         }
     }
 
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("What speed is your fan running at?\n0 - It's stopped\n1 - Slow\n2 - Medium\n3 - Fast");
+        int speed = input.nextInt();
+        System.out.println("\nIs your fan on?\nTrue - Yes\nFalse - No");
+        boolean fanOn = input.nextBoolean();
+        System.out.println("\nWhat is the radius of your fan?");
+        double radius = input.nextDouble();
+        System.out.println("\nWhat is the color of your fan?");
+        String color = input.next();
+
+        Fan yourFan = new Fan(speed, fanOn, radius, color);
+        System.out.println(yourFan.toString());
 
         Fan defaultFan = new Fan();
         System.out.println(defaultFan.toString());
+
+        input.close();
 
     }
 
