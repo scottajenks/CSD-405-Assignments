@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Program2 {
+public class Jenks_Program2 {
 
     public static void main(String[] args) {
 
