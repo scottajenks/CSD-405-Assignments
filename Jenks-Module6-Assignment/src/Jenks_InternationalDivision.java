@@ -1,3 +1,7 @@
+/*Scott Jenks
+ * 1/24/2023
+ * Module 6 - Create internation division subclass
+ */
 public class Jenks_InternationalDivision extends Jenks_Division {
     private String countryName;
     private String languageSpoken;

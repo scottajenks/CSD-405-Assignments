@@ -1,3 +1,8 @@
+/*Scott Jenks
+ * 1/24/2023
+ * Module 6 - Create abstract division superclass
+ */
+
 public abstract class Jenks_Division {
     protected String companysDivisionName;
     protected int accountNumber;

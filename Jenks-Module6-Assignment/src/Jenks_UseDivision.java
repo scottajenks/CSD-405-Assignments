@@ -1,3 +1,7 @@
+/*Scott Jenks
+ * 1/24/2023
+ * Module 6 - Create main objects of company and display results
+ */
 public class Jenks_UseDivision {
     public static void main(String[] args) {
         Jenks_Division newCompany1 = new Jenks_InternationalDivision("Asia Division", 1284634, "China", "Mandarin");

@@ -1,3 +1,7 @@
+/*Scott Jenks
+ * 1/24/2023
+ * Module 6 - Create domestic division subclass
+ */
 public class Jenks_DomesticDivision extends Jenks_Division {
     private String stateName;
 
